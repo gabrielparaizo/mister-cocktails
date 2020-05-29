@@ -1,21 +1,21 @@
 <div class="banner">
-  <div class="banner-content">
-    <h1 class="d-flex justify-content-center" style="font-size: 3em; font-weight: bold">Amazing cocktails</h1>
-    <p class="d-flex justify-content-center" style="font-size: 1.5em">Awesome drinks for y'all</p>
-    <% link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary" %>
-  </div>
+<div class="banner-content">
+  <h1>Amazing cocktails</h1>
+  <p>Awesome drinks for y'all</p>
+  <% link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary" %>
+</div>
 </div>
 <div class="container">
-  <div class="row d-flex justify-content-center">
+  <div class="row">
     <% @cocktails.each do |cocktail| %>
     <div class="col-12 col-md-6 col-lg-3">
       <div class="card">
-        <div class="card-description">
-          <h2 class="d-flex justify-content-center align-items-center" style="color: #000; font-weight: bold; margin: 10px"><%= cocktail.name %></h2>
-        </div>
-        <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+      <div class="card-description">
+        <h2><%= cocktail.name %></h2>
       </div>
+      <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
     </div>
-    <% end %>
   </div>
+  <% end %>
+</div>
 </div>
