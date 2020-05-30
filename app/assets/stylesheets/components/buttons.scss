@@ -1,0 +1,29 @@
+// Color Variables
+$button-color: #BF9341;
+$white-button-color: #fff;
+
+
+.nav-button {
+  padding: 10px 30px;
+  color: $white-button-color;
+  background-color: $button-color;
+  border-radius: 4px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+.nav-button:hover {
+  color: $white-button-color;
+}
+
+.card-button {
+  padding: 10px 30px;
+  color: $white-button-color;
+  background-color: $button-color;
+  border-radius: 4px;
+  text-align: center !important;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-decoration: none !important;
+}
